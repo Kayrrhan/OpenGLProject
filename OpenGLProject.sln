@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LearnOpenGL2k24", "LearnOpenGL2k24.vcxproj", "{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLProject", "OpenGLProject.vcxproj", "{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +15,7 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Debug|x64.ActiveCfg = Debug|x64
 		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Debug|x64.Build.0 = Debug|x64
-		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Debug|x86.ActiveCfg = Debug|Win32
-		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Debug|x86.Build.0 = Debug|Win32
+		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Debug|x86.ActiveCfg = Debug|x64
 		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Release|x64.ActiveCfg = Release|x64
 		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Release|x64.Build.0 = Release|x64
 		{59AC06A4-CCF4-4D2E-B103-4C9D17CEEF43}.Release|x86.ActiveCfg = Release|Win32
@@ -26,6 +25,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {4207F454-567A-441D-A063-208B5373151C}
+		SolutionGuid = {22F60D39-BAFA-4048-AA9B-CECD0349B1A2}
 	EndGlobalSection
 EndGlobal

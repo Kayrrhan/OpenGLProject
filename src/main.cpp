@@ -8,7 +8,21 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 	glViewport(0, 0, width, height);
 }
 
-int main() 
+void processInput(GLFWwindow* window)
+{
+	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
+	{
+		glfwSetWindowShouldClose(window, true);
+	}
+}
+
+void draw()
+{
+	glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+	glClear(GL_COLOR_BUFFER_BIT);
+}
+
+int main()
 {
 	glfwInit();
 	// Define OpenGL versions & profile
@@ -19,7 +33,7 @@ int main()
 
 	// Create window
 	GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
-	if (window == NULL) 
+	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();
@@ -42,6 +56,12 @@ int main()
 	// main loop 
 	while (!glfwWindowShouldClose(window))
 	{
+		// Input
+		processInput(window);
+
+		// Rendering
+		draw();
+		// Swap buffer & events
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
